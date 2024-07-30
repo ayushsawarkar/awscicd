@@ -8,6 +8,6 @@ def homepage():
     if request.method == "GET":
         return jsonify({"message": " This is test 3. Hello World from CI/CD Python-ECS Fargate Pipeline!"})
 
-PORT = int(os.environ.get("PORT", 9000))
+PORT = int(os.environ.get("PORT", 9090))
 if __name__ == '__main__':
     app.run(threaded=True,host='0.0.0.0',port=PORT)
